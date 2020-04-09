@@ -8,12 +8,12 @@
     $_SESSION["name"]=$_POST["name"];
     $_SESSION["age"]=$_POST["age"];
     $_SESSION["phone"]=$_POST["phone"];
-    ?>
+?>
 
 <p>welcome <?php
     echo " " $_SESSION["name"];
             ?>
-            </p>
+</p>
 <form action="/action_page.php">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
