@@ -5,7 +5,7 @@
 <h1>Welcome to Risk Analyzer for COVID 19</h1>
 <h2>To Start Analyzing Please Enter Some Information</h2></br>
 
-<form action="start.php">
+<form action="2.php">
     <input type="submit">
 </form>
 
