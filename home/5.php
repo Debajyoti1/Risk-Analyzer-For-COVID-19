@@ -17,7 +17,6 @@ $marks=0;
 if($age>=60){
     $marks +=1;
 }
-echo $age;
 
 if($_SESSION["q1"]=="Yes"){
     $marks +=2;
@@ -58,10 +57,9 @@ if($_SESSION["q12"]=="Yes"){
 if($_SESSION["q13"]=="Yes"){
     $marks +=1;
 }
-echo $marks;
-
+$marks *=5;
 ?>
-<?php print_r($_SESSION); ?>
+<?php echo $marks; ?>
 <?php
 session_unset();
 
