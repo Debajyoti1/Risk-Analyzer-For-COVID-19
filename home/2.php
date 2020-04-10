@@ -6,14 +6,14 @@ session_start();
 <head> <title>RISK ANALYZER FOR COVID 19</title> </head>
 <body>
 <h1>Welcome to Risk Analyzer for COVID 19</h1>
-<h2>To Start Analyzing Please Enter Some Information</h2></br>
+<h2>Personal Info</h2></br>
 
-<form action="3.php" method="POST">
-    Name * : <input type="text" name="name" required><br>
-    Age * : <input type="text" name="age" required><br>
-    Phone(optional): <input type="text" name="phone"><br>
+<form action="/3.php" method="POST">
+    Name * : <input type="text" name="Name" required><br>
+    Age * : <input type="text" name="Age" required><br>
+    Phone(optional): <input type="text" name="Phone"><br>
   Gender :
-  <input type="radio" id="male" name="gender" value="male">
+  <input type="radio" id="male" name="gender" value="male" checked>
   <label for="male">Male</label><br>
   <input type="radio" id="female" name="gender" value="female">
   <label for="female">Female</label><br>
