@@ -9,7 +9,6 @@
     $_SESSION["q5"]=$_POST["q5"];  
     $_SESSION["q6"]=$_POST["q6"];
 ?>
-<?php print_r($_SESSION); ?>
 <!DOCTYPE html>
 <html>
 <head> <title>RISK ANALYZER FOR COVID 19</title> </head>
