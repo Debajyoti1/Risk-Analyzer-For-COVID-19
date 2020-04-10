@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head> <title>RISK ANALYZER FOR COVID 19</title> </head>
@@ -5,9 +8,7 @@
 <h1>Welcome to Risk Analyzer for COVID 19</h1>
 <h2>To Start Analyzing Please Enter Some Information</h2></br>
 
-<form action="2.php">
-    <input type="submit">
-</form>
+<a href="2.php">Start</a>
 
 </body>
 </html>
