@@ -8,7 +8,7 @@ session_start();
 <h1>Welcome to Risk Analyzer for COVID 19</h1>
 <h2>To Start Analyzing Please Enter Some Information</h2></br>
 
-<a href="2.php">Start</a>
+<a href="personal.php">Start</a>
 
 </body>
 </html>
