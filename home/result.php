@@ -31,8 +31,6 @@
     $q13=$_SESSION["q13"]; 
     $ip=$_SERVER['REMOTE_ADDR'];
     $os=$_SERVER['HTTP_USER_AGENT'];
-    echo $ip;
-    echo $os;
 
 ?>
 <?php
