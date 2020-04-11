@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Admin</title>
-<meta cha
+<meta charset="UTF8">
+
 </head>
 </html>
