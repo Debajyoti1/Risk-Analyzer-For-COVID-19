@@ -95,15 +95,7 @@ $sql = "INSERT INTO details values('$name','$age','$phone','$gender','$ip','$os'
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+$conn->query($sql);
 $conn->close();
 ?>
 
