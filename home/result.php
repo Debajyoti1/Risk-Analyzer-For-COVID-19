@@ -8,7 +8,32 @@
     $_SESSION["q10"]=$_POST["q10"];  
     $_SESSION["q11"]=$_POST["q11"];  
     $_SESSION["q12"]=$_POST["q12"];
-    $_SESSION["q13"]=$_POST["q13"];  
+    $_SESSION["q13"]=$_POST["q13"];
+
+    $name=$_SESSION["Name"];
+    $age=$_SESSION["Age"];
+    $phone=$_SESSION["Phone"];
+    $gender=$_SESSION["gender"];  
+
+    $q1=$_SESSION["q1"];   
+    $q2=$_SESSION["q2"];  
+    $q3=$_SESSION["q3"];  
+    $q4=$_SESSION["q4"];  
+    $q5=$_SESSION["q5"];  
+    $q6=$_SESSION["q6"];
+
+    $q7=$_SESSION["q7"];   
+    $q8=$_SESSION["q8"];  
+    $q9=$_SESSION["q9"];  
+    $q10=$_SESSION["q10"];  
+    $q11=$_SESSION["q11"];  
+    $q12=$_SESSION["q12"];
+    $q13=$_SESSION["q13"]; 
+    $ip=$_SERVER['REMOTE_ADDR'];
+    $os=$_SERVER['HTTP_USER_AGENT'];
+    echo $ip;
+    echo $os;
+
 ?>
 <?php
 $age = $_SESSION["Age"] + 0;
@@ -60,6 +85,37 @@ if($_SESSION["q13"]=="Yes"){
 $marks *=5;
 ?>
 <?php echo $marks; ?>
+
+<?php
+$servername = "localhost";
+$username = "covid";
+$password = "Gadgetguys@2000";
+$dbname = "covid";
+$sql = "INSERT INTO details values('$name','$age','$phone','$gender','$ip','$os','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13',$marks);";
+
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
+?>
+
+
+
+
+
+
+
+
+
 <?php
 session_unset();
 
