@@ -94,9 +94,8 @@ $dbname = "covid";
 $sql = "INSERT INTO details values('$name','$age','$phone','$gender','$ip','$os','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13',$marks);";
 
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
