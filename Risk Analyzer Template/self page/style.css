@@ -1152,9 +1152,9 @@ h2 span:hover~span
 /*............................LED Button................................*/
 
 
-input [type="submit"]
+input [type=submit]
 {
-	position:absolute;
+	position:relative
 	top:220%;
 	left:50%;
 	transform: translate(-50%,-50%);
@@ -1173,7 +1173,7 @@ input [type="submit"]
 	border-radius: 30px;
 	
 }
-input [type="submit"]:hover{
+input [type=submit]:hover{
 	animation: animate 8s linear infinite;
 }
 @keyframes animate
@@ -1188,7 +1188,7 @@ input [type="submit"]:hover{
 	}
 }
 
-input [type="submit"]:before
+input [type=submit]:before
 {
 	content: '';
 	position: absolute;
@@ -1204,7 +1204,7 @@ input [type="submit"]:before
 	transition: 0.5s;
 }
 
-input [type="submit"]:hover:before
+input [type=submit]:hover:before
 {
 	filter:blur(40px);
 	opacity: 1;
