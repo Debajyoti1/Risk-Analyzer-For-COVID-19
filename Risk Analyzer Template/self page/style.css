@@ -1219,13 +1219,9 @@ h2 span:hover~span
 /*............................LED Button................................*/
 
 
-<<<<<<< HEAD
-input [type=submit]
-=======
 a1
->>>>>>> 9a6654b631cbb6525ee78ceaf55c35503f4e1841
 {
-	position:relative
+	position:absolute;
 	top:220%;
 	left:50%;
 	transform: translate(-50%,-50%);
@@ -1244,11 +1240,7 @@ a1
 	border-radius: 30px;
 	
 }
-<<<<<<< HEAD
-input [type=submit]:hover{
-=======
 a1:hover{
->>>>>>> 9a6654b631cbb6525ee78ceaf55c35503f4e1841
 	animation: animate 8s linear infinite;
 }
 @keyframes animate
@@ -1263,11 +1255,7 @@ a1:hover{
 	}
 }
 
-<<<<<<< HEAD
-input [type=submit]:before
-=======
 a1:before
->>>>>>> 9a6654b631cbb6525ee78ceaf55c35503f4e1841
 {
 	content: '';
 	position: absolute;
@@ -1283,11 +1271,7 @@ a1:before
 	transition: 0.5s;
 }
 
-<<<<<<< HEAD
-input [type=submit]:hover:before
-=======
 a1:hover:before
->>>>>>> 9a6654b631cbb6525ee78ceaf55c35503f4e1841
 {
 	filter:blur(40px);
 	opacity: 1;
