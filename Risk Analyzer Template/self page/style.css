@@ -1219,7 +1219,7 @@ h2 span:hover~span
 /*............................LED Button................................*/
 
 
-a1
+.a1
 {
 	position:absolute;
 	top:220%;
@@ -1240,7 +1240,7 @@ a1
 	border-radius: 30px;
 	
 }
-a1:hover{
+.a1:hover{
 	animation: animate 8s linear infinite;
 }
 @keyframes animate
@@ -1255,7 +1255,7 @@ a1:hover{
 	}
 }
 
-a1:before
+.a1:before
 {
 	content: '';
 	position: absolute;
@@ -1271,7 +1271,7 @@ a1:before
 	transition: 0.5s;
 }
 
-a1:hover:before
+.a1:hover:before
 {
 	filter:blur(40px);
 	opacity: 1;
