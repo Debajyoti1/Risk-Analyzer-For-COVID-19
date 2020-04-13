@@ -126,7 +126,34 @@ $marks *=5;
           </div>
           </div>';
       }
-      
+      if ($marks<=30){
+        echo '<div class="container">
+        <div class="card">
+            <div class="imgBox">
+                <img src="image/img.png">
+            </div>
+            <div class="details">
+                <h2>Your COVID19 Test Report</h2>
+              <h3 style="color:green">Your score is ';echo $marks;echo'%</h3>
+                <p> If you have submitted all data correctly. You have a low amount of risk for COVID19. But still you should follow all precautions.<br> Visit the Map to explore the nearest COVID19 isolation center, to test your blood.<br> This website will not share any data for suspicious victim detected by us. But it is your responsibility to keep yourself safe as well as your family. </p>
+            </div>
+        </div>
+        </div>'; 
+      }
+      if ($marks>30 AND $marks<60){
+        echo '<div class="container">
+        <div class="card">
+            <div class="imgBox">
+                <img src="image/img.png">
+            </div>
+            <div class="details">
+                <h2>Your COVID19 Test Report</h2>
+              <h3 style="color:orange">Your score is ';echo $marks;echo'%</h3>
+              <p> If you have submitted all data correctly. You have a medium amount of risk for COVID19. If possible have a test for your blood. Visit the Map to explore the nearest COVID19 isolation center, to test your blood.<br> This website will not share any data for suspicious victim detected by us. But it is your responsibility to keep yourself safe as well as your family. </p>
+              </div>
+        </div>
+        </div>'; 
+      }
 
 	  ?>
 	  </div>
