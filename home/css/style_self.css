@@ -1,0 +1,1288 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+   margin: 0;
+  padding: 0;
+	background-color: #171717;
+  font-family: 'Open Sans', sans-serif;
+}
+/*.............NAV.............................*/
+nav{
+  height: 80px;
+	background-color: black;
+}
+nav img{
+	position: absolute;
+	width: 200px;
+	top: 15px;
+	left: 3%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a{
+  position: relative;
+  padding: 5px 0;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+	background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,
+label #cancel{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1118px){
+  nav img{
+	width: 180px;
+    left: 5%;
+  }
+}
+@media (max-width: 944px){
+  nav img{
+    width: 170px;
+		top: 20px;
+		left: 6%;
+  }
+	nav ul li a{
+		font-size: 17px;
+	}
+}
+@media (max-width: 860px){
+  label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #222222;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+	#check:checked ~ label #btn{
+    display: none;
+  }
+	#check:checked ~ label #cancel{
+    display: block;
+  }
+}
+
+
+
+/*........................................CHECKBOX..................................*/
+
+.checkbox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox label input
+{
+	display: none;
+}
+
+.checkbox label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox label input:checked ~ span.yes:before,
+.checkbox label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox label input:checked ~ span.no:before,
+.checkbox label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+/*........................................CHECKBOX..1................................*/
+
+.checkbox1
+{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox1:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox1 p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox1 label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox1 label input
+{
+	display: none;
+}
+
+.checkbox1 label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox1 label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox1 label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox1 label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox1 label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox1 label input:checked ~ span.yes:before,
+.checkbox1 label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox1 label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox1 label input:checked ~ span.no:before,
+.checkbox1 label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*........................................CHECKBOX..2................................*/
+
+.checkbox2
+{
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox2:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox2 p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox2 label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox2 label input
+{
+	display: none;
+}
+
+.checkbox2 label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox2 label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox2 label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox2 label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox2 label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox2 label input:checked ~ span.yes:before,
+.checkbox2 label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox2 label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox2 label input:checked ~ span.no:before,
+.checkbox2 label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*........................................CHECKBOX..3................................*/
+
+.checkbox3
+{
+	position: absolute;
+	top: 125%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox3:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox3 p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox3 label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox3 label input
+{
+	display: none;
+}
+
+.checkbox3 label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox3 label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox3 label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox3 label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox3 label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox3 label input:checked ~ span.yes:before,
+.checkbox3 label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox3 label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox3 label input:checked ~ span.no:before,
+.checkbox3 label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*........................................CHECKBOX..4................................*/
+
+.checkbox4
+{
+	position: absolute;
+	top: 150%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox4:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox4 p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox4 label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox4 label input
+{
+	display: none;
+}
+
+.checkbox4 label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox4 label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox4 label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox4 label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox4 label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox4 label input:checked ~ span.yes:before,
+.checkbox4 label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox4 label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox4 label input:checked ~ span.no:before,
+.checkbox4 label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*........................................CHECKBOX..5................................*/
+
+.checkbox5
+{
+	position: absolute;
+	top: 175%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox5:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox5 p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox5 label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox5 label input
+{
+	display: none;
+}
+
+.checkbox5 label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox5 label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox5 label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox5 label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox5 label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox5 label input:checked ~ span.yes:before,
+.checkbox5 label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox5 label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox5 label input:checked ~ span.no:before,
+.checkbox5 label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*........................................CHECKBOX..6................................*/
+
+.checkbox6
+{
+	position: absolute;
+	top: 200%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	width: 92%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	
+}
+
+.checkbox6:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox6 p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox6 label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox6 label input
+{
+	display: none;
+}
+
+.checkbox6 label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox6 label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox6 label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox6 label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox6 label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox6 label input:checked ~ span.yes:before,
+.checkbox6 label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox6 label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox6 label input:checked ~ span.no:before,
+.checkbox6 label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*............................LED Button................................*/
+
+
+.a1
+{
+	position:absolute;
+	top:220%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 150px;
+	height: 60px;
+	text-align: center;
+	line-height: 55px;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 30px;
+	
+}
+.a1:hover{
+	animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+
+.a1:before
+{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left:-5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 30px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.a1:hover:before
+{
+	filter:blur(40px);
+	opacity: 1;
+}
+
+/*.......................................................*/
+
+
+
+
+/*................PAGE CONTENT............................*/
+
+.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 30%;
+  padding-bottom: 20%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width:1100px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 40%;
+  padding-bottom: 10%;
+	}
+}
+@media screen and (max-width:1010px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%;
+  margin-bottom: 40%;
+  padding-bottom: 20%;
+	}
+}
+@media screen and (max-width:980px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%;
+  margin-bottom: 40%;
+  padding-bottom: 20%;
+	}
+}
+@media screen and (max-width:890px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 40%;
+  padding-bottom: 30%;
+	}
+}
+@media screen and (max-width:800px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 40%;
+  padding-bottom: 40%;
+	}
+}
+@media screen and (max-width:720px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 40%;
+  padding-bottom: 50%;
+	}
+}
+@media screen and (max-width:650px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 50%;
+  padding-bottom: 50%;
+	}
+}
+@media screen and (max-width:600px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 60%;
+  padding-bottom: 50%;
+	}
+}
+@media screen and (max-width:550px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 60%;
+  padding-bottom: 60%px;
+	}
+}
+@media screen and (max-width:530px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 70%;
+  padding-bottom: 60%;
+	}
+}
+@media screen and (max-width:500px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 75%;
+  padding-bottom: 70%;
+	}
+}
+@media screen and (max-width:500px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 90%;
+  padding-bottom: 70%;
+	}
+}
+@media screen and (max-width:400px){
+	.page-content{
+  min-height: 100vh;
+  margin-top:20%; 
+  margin-bottom: 100%;
+  padding-bottom: 90%;
+	}
+}
+
+/* .................FOOTER.....................*/
+
+footer{
+  
+  background: #f1f1f1;
+  padding: 50px 0;
+}
+
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo{
+  width: 180px;
+}
+
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: #fc5c65;
+}
+
+.right-col h1{
+  font-size: 26px;
+}
+
+.border{
+  width: 100px;
+  height: 4px;
+  top: 15px;
+  background: #fc5c65;
+}
+
+.covid19-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn{
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #f1f1f1;
+  background: #fc5c65;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.btn:hover{
+  opacity: .7;
+}
+
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+	text-align: center;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    }
+}
