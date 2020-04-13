@@ -82,7 +82,93 @@ if($_SESSION["q13"]=="Yes"){
 }
 $marks *=5;
 ?>
-<?php echo $marks; ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Risk Analyzer</title>
+    <link rel="stylesheet" href="css/style_result.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="gg.png" alt="covid19 risk checker">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Map</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">how to use</a></li>
+        </ul>
+      </nav>
+	 
+<!.......................................................................................................................!>
+	  
+<div class="page-content">
+	  <?php
+      if ($marks>=60){
+          echo '<div class="container">
+          <div class="card">
+              <div class="imgBox">
+                  <img src="image/img.png">
+              </div>
+              <div class="details">
+                  <h2>Your COVID19 Test Report</h2>
+                <h3 style="color:red">Your score is ';echo $marks;echo'%</h3>
+                  <p> If you have submitted all data correctly. You have a high amount of risk for COVID19. Do steps necessarily.<br> Visit the Map to explore the nearest COVID19 isolation center, to test your blood.<br> This website will not share any data for suspicious victim detected by us. But it is your responsibility to keep yourself safe as well as your family. </p>
+              </div>
+          </div>
+          </div>';
+      }
+      
+
+	  ?>
+	  </div>
+      <div class="a1">
+	  <a>Retest</a>
+	  </div>
+
+<!.......................................................................................................................!>
+	  
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="gg.png" alt="" class="logo">
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="rights-text">©dueldutta | All Rights Reserved.</p>
+        </div>
+
+        <div class="right-col">
+          <h1>COVID19 Updates</h1>
+          <p>&nbsp;</p>
+          <div class="border"></div>
+          <p>&nbsp;</p>
+          <p>Get the letest news of COVID19.</p>
+          <p>&nbsp;</p>
+          <form action="" class="covid19-form">
+            <input type="text" class="txtb" placeholder="Enter Your Email">
+            <input type="submit" class="btn" value="submit">
+          </form>
+        </div>
+      </div>
+    </footer>
+	  
+	  
+  </body>
+</html>
+
 
 <?php
 $servername = "localhost";

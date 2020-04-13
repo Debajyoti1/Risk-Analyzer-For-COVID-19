@@ -41,11 +41,11 @@
 			 	<div class="checkbox">
 			 	 <p>1.	Tell us if you ever went outside during these lockdown days?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q1" value="Yes" checked>
+			     <input type="radio" id="yes" name="q7" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q1" value="No">
+ 				 <input type="radio" id="no" name="q7" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -53,11 +53,11 @@
 			   <div class="checkbox1">
 			 	 <p>2.	Tell us honestly if you have fever?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q2" value="Yes" checked>
+			     <input type="radio" id="yes" name="q8" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q2" value="No">
+ 				 <input type="radio" id="no" name="q8" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -65,11 +65,11 @@
 			  <div class="checkbox2">
 			 	 <p>3.	Tell us honestly if you have headache?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q3" value="Yes" checked>
+			     <input type="radio" id="yes" name="q9" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q3" value="No">
+ 				 <input type="radio" id="no" name="q9" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -77,11 +77,11 @@
 			 <div class="checkbox3">
 			 	 <p>4.	Tell us honestly if you have cough and cold?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q4" value="Yes" checked>
+			     <input type="radio" id="yes" name="q10" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q4" value="No">
+ 				 <input type="radio" id="no" name="q10" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -89,11 +89,11 @@
 			 <div class="checkbox4">
 			 	 <p>5.	Tell us honestly if you have coarseness in voice?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q5" value="Yes" checked>
+			     <input type="radio" id="yes" name="q11" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q5" value="No">
+ 				 <input type="radio" id="no" name="q11" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -101,11 +101,11 @@
 			 <div class="checkbox5">
 			 	 <p>6.	Tell us honestly if you have sore throat?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q6" value="Yes" checked>
+			     <input type="radio" id="yes" name="q12" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q6" value="No">
+ 				 <input type="radio" id="no" name="q12" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -113,11 +113,11 @@
 			 <div class="checkbox6">
 			 	 <p>7.	Tell us honestly if you have shortness of breath?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q7" value="Yes" checked>
+			     <input type="radio" id="yes" name="q13" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q7" value="No">
+ 				 <input type="radio" id="no" name="q13" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
