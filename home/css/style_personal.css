@@ -226,10 +226,9 @@ h4:hover:after
 .box{
   width: 60%;
   position: relative;
-  margin-top: 200px;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin-top: 150px;
+  top: 90%;
+  left: 20%;
   background-color: rgba(0,0,0,0.00);
   text-align: center;
 }
