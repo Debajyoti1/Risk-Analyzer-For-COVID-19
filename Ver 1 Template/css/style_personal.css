@@ -137,7 +137,7 @@ h1
 .info_1
 {
 	position: absolute;
-	top: 50%;
+	top: 53%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -272,6 +272,7 @@ h4:hover:after
 }
 .box input[type = "submit"]:hover{
   background: #2ecc71;
+  width: 200px;
 }
 
 /*...................radio.................................*/
@@ -285,11 +286,18 @@ h4:hover:after
 }
 
 .radios-boxes {
-  display: flex;
-	padding-left: 106px;
-	padding-top: 250px;
+    display: flex;
+	padding-left: 37%;
+	padding-top: 150px;
 }
-
+@media screen and (max-width:500px){
+	.radios-boxes {
+    display: flex;
+	padding-left: 10%;
+	padding-top: 160px;
+}
+	
+}
 .radios {
   display: flex;
   filter: url('#gooeyness');
@@ -438,6 +446,7 @@ footer{
 
 .right-col h1{
   font-size: 26px;
+	color: black;
 }
 
 .border{
