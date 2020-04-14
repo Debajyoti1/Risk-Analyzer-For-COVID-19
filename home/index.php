@@ -40,7 +40,7 @@ session_start();
           </div>
 		  
 		  <div class="info_1">
-			  <h3>Check <span style="color: greenyellow">COVID19 </span>in yourself</h3>
+			  <h3>Check COVID19 in yourself</h3>
 		  </div>
 		  
 		  <div class="button_front">
