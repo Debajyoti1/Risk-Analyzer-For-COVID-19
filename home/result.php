@@ -116,7 +116,7 @@ $marks *=5;
           echo '<div class="container">
           <div class="card">
               <div class="imgBox">
-                  <img src="image/img.png">
+                  <img src="image/covid19 test report.jpg">
               </div>
               <div class="details">
                   <h2>Your COVID19 Test Report</h2>
@@ -130,7 +130,7 @@ $marks *=5;
         echo '<div class="container">
         <div class="card">
             <div class="imgBox">
-                <img src="image/img.png">
+                <img src="image/covid19 test report.jpg">
             </div>
             <div class="details">
                 <h2>Your COVID19 Test Report</h2>
@@ -144,7 +144,7 @@ $marks *=5;
         echo '<div class="container">
         <div class="card">
             <div class="imgBox">
-                <img src="image/img.png">
+                <img src="image/covid19 test report.jpg">
             </div>
             <div class="details">
                 <h2>Your COVID19 Test Report</h2>
@@ -158,7 +158,10 @@ $marks *=5;
 	  ?>
 	  </div>
       <div class="a1">
-	  <a>Retest</a>
+	  <a href="index.php">Retest</a>
+	  </div>
+    <div class="a2">
+	  <a href="https://api.whatsapp.com/send?phone=&text=Get%20Check%20your%20risk%20for%20COVID19and%20disperse%20this%20virous%20from%20this%20website%3a%20https%3a%2f%2fdebajyoti.tk%20%F0%9F%A6%A0%0a%0aStay%20Indoors%20%26%20Stay%20Safe%20%F0%9F%87%AE%F0%9F%87%B3%20&source=&data=&app_absent=">Share</a>
 	  </div>
 
 <!.......................................................................................................................!>

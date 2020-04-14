@@ -87,11 +87,11 @@ session_start();
 			 <div class="checkbox4">
 			 	 <p>5.	Tell us if anyone in your family is doctor , police or doing any other social jobs during lockdown days & have a close contact with you ?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q6" value="Yes" checked>
+			     <input type="radio" id="yes" name="q5" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q6" value="No">
+ 				 <input type="radio" id="no" name="q5" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
@@ -99,11 +99,11 @@ session_start();
 			 <div class="checkbox5">
 			 	 <p>6.	Tell us if you or anyone from your family are using masks or gloves at the time of buying essential comodities like food and washing hand, face & legs properly after reaching home?</p>
 		    	<label>
-			     <input type="radio" id="yes" name="q7" value="Yes" checked>
+			     <input type="radio" id="yes" name="q6" value="Yes" checked>
 				 <span class="yes">Yes</span>
 		    	</label>
 		    	<label>
- 				 <input type="radio" id="no" name="q7" value="No">
+ 				 <input type="radio" id="no" name="q6" value="No">
  				 <span class="no">No</span>
 		    	</label>
 		    	</div>
