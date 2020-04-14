@@ -405,12 +405,12 @@ footer{
     width: 100%;
     margin-top: 20px;
     }
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
   body{
        margin: 0;
   padding: 0;
-	background-image: url("https://debajyoti.tk/image/doc1.jpg");
-	background-position: left;
+	background-image: url("https://debajyoti.tk/image/mob.jpg");
+	background-position: center;
   font-family: 'Open Sans', sans-serif;
   }
 }
