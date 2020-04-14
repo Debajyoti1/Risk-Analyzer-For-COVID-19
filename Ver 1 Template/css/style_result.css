@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+a{
+  color: white;
+}
 body{
    margin: 0;
   padding: 0;

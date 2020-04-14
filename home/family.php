@@ -109,7 +109,7 @@ session_start();
 		    	</div>
 			 
 			 <div>
-			 <input type="Submit" class="a1" >
+			 <input type="Submit" value="Next" class="a1" >
 			 </div>
 			 
 			 </form>
