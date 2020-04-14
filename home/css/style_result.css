@@ -11,7 +11,7 @@ a{
 body{
    margin: 0;
   padding: 0;
-	background: url("../image/doc1.jpg");
+	background-image: url("https://debajyoti.tk/image/doc1.jpg");
 	background-size: cover;
 	background-position: center;
   font-family: 'Open Sans', sans-serif;
@@ -405,4 +405,12 @@ footer{
     width: 100%;
     margin-top: 20px;
     }
+@media screen and (max-width:400px) {
+  body{
+       margin: 0;
+  padding: 0;
+	background-image: url("https://debajyoti.tk/image/doc1.jpg");
+	background-position: left;
+  font-family: 'Open Sans', sans-serif;
+  }
 }
