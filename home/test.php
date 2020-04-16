@@ -25,6 +25,8 @@ curl_close($curl);
 if ($err) {
 	echo "cURL Error #:" . $err;
 } else {
-	echo $response;
+	$a=json_decode($response,true);
 }
+echo '<br><br>';
+echo $a['data']['covid19Stats']['0']['confirmed'];
 ?>
