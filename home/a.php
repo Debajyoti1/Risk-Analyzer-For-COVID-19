@@ -20,15 +20,16 @@ $b=end($results['cases_time_series']);
   text-align: center;
   line-height: 200px;
   font-size: 30px;
+  color: white;
 }
 </style>
 </head>
 <body>
 <div class="block">
-  <div style="background-color: red">Total confirmed: <?php echo $b['totalconfirmed']; ?></div>
-  <div style="background-color: blue">Total active: <?php echo $b['totalconfirmed']-$b['totalrecovered']-$b['totaldeceased']; ?></div>
-  <div style="background-color: green"><?php echo $b['totalrecovered']; ?></div>
-  <div style="background-color: yellow">Total deceased: <?php echo $b['totaldeceased']; ?></div>  
+  <div style="background-color: orange">Total confirmed: <?php echo $b['totalconfirmed']; ?></div>
+  <div style="background-color: red">Total active: <?php echo $b['totalconfirmed']-$b['totalrecovered']-$b['totaldeceased']; ?></div>
+  <div style="background-color: green">Total Recovered: <?php echo $b['totalrecovered']; ?></div>
+  <div style="background-color: grey">Total deceased: <?php echo $b['totaldeceased']; ?></div>  
 </div>
 
 </body>
