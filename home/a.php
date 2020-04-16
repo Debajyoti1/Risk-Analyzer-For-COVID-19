@@ -21,6 +21,7 @@ $b=end($results['cases_time_series']);
   line-height: 200px;
   font-size: 30px;
   color: white;
+  border-radius: 7px;
 }
 </style>
 </head>
