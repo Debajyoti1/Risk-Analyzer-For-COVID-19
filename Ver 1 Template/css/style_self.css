@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+	justify-content: center;
+	align-self: center;
+	min-height: 100vh;
+	background-color: #0D0D0D;
+    font-family: 'Open Sans', sans-serif;
+	
+}
+nav{
+    height: 80px;
+	background-color: black;
+}
+nav img{
+	position: absolute;
+	width: 200px;
+	top: 15px;
+	left: 3%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a{
+  position: relative;
+  padding: 5px 0;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,
+label #cancel{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1118px){
+  nav img{
+	width: 180px;
+    left: 5%;
+  }
+}
+@media (max-width: 944px){
+  nav img{
+    width: 170px;
+		top: 20px;
+		left: 6%;
+  }
+	nav ul li a{
+		font-size: 17px;
+	}
+}
+@media (max-width: 860px){
+  label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #222222;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+	#check:checked ~ label #btn{
+    display: none;
+  }
+	#check:checked ~ label #cancel{
+    display: block;
+  }
+}
+
+
+/*........................................CHECKBOX..................................*/
+
+.checkbox
+{
+	position: relative;
+	font-size: 20px;
+	
+	margin: 5%;
+	align-content: center;
+
+	
+	width: 90%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,1);
+	border-radius: 7px;
+	overflow: hidden;
+	clear: both;
+}
+.checkbox:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	
+	width: 100%;
+	height: 100%;
+	background: rgba(225,225,225,0.05);
+	transform: skewX(-3deg);
+	pointer-events: none;
+	
+}
+
+.checkbox p
+{
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+.checkbox label
+{
+	position: relative;
+	cursor: pointer;
+	
+}
+
+.checkbox label input
+{
+	display: none;
+}
+
+.checkbox label span
+{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 5px;
+	width: 50px;
+	background: #000;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 6px;
+}
+
+.checkbox label input:checked ~ span
+{
+	color: #FFFF;
+	border: 1px solid #008eff;
+}
+
+.checkbox label input:checked ~ span:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.checkbox label input:checked ~ span:after
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+
+.checkbox label input:checked ~ span.yes
+{
+	color: #ff0000;
+	border-color: #ff0000;
+	box-shadow: inset 0 0 10px #ff0000;
+}
+
+.checkbox label input:checked ~ span.yes:before,
+.checkbox label input:checked ~ span.yes:after
+{
+	background: #ff0000;
+}
+
+
+.checkbox label input:checked ~ span.no
+{
+	color: #62ff00;
+	border-color: #62ff00;
+	box-shadow: inset 0 0 10px #62ff00;
+}
+
+.checkbox label input:checked ~ span.no:before,
+.checkbox label input:checked ~ span.no:after
+{
+	background: #62ff00;
+}
+
+/*............................LED Button................................*/
+
+
+.a1
+{
+	position:relative;
+	align-content: center;
+	text-align: center;
+	width: 150px;
+	margin-top: 0px;
+	margin-bottom: 10%;
+	line-height: 55px;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 30px;
+	clear: both;
+	
+}
+.a1:hover{
+	animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+
+.a1:before
+{
+	content: '';
+	position: relative;
+	background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 30px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.a1:hover:before
+{
+	filter:blur(40px);
+	opacity: 1;
+}
+
+
+/* footer......................................*/
+
+footer{
+  background: #f1f1f1;
+  padding: 50px 0;
+}
+
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo{
+  width: 180px;
+}
+
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: #fc5c65;
+}
+
+.right-col h1{
+  font-size: 26px;
+}
+
+.border{
+  width: 100px;
+  height: 4px;
+  top: 15px;
+  background: #fc5c65;
+}
+
+.covid19-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn{
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #f1f1f1;
+  background: #fc5c65;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.btn:hover{
+  opacity: .7;
+}
+
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+	text-align: center;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+	.border{
+		width: 98%;
+	}
+}
+
+
+@media screen and (max-width:700px){
+  .btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    }
+}
