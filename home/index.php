@@ -47,7 +47,7 @@ $b=end($results['cases_time_series']);
 		  </div>
 		  
 		  			
-			<h2 style="color: #00FFE8">INDIAN COVID-19 CASE RECOARDS LIVE </h2>
+			<h2 style="color: #00FFE8">INDIAN COVID-19 LIVE UPDATE </h2>
 
 		  <script>
       document.querySelector("body").addEventListener("mousemove", eyeball);
