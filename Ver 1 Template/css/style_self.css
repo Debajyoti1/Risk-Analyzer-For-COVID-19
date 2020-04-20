@@ -252,10 +252,12 @@ label #cancel{
 
 .a1
 {
+  clear: both;
+  margin-left: 45%;
 	position:relative;
 	align-content: center;
 	text-align: center;
-	width: 150px;
+	width: 170px;
 	margin-top: 0px;
 	margin-bottom: 10%;
 	line-height: 55px;
@@ -268,7 +270,7 @@ label #cancel{
 	background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
 	background-size: 400%;
 	border-radius: 30px;
-	clear: both;
+
 	
 }
 .a1:hover{
@@ -410,7 +412,10 @@ footer{
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width: 400px){
+ .a1{
+      margin-left: 30%;
+    }
   .btn{
     margin: 0;
     width: 100%;
