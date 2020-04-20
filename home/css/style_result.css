@@ -460,5 +460,11 @@ footer{
     margin: 0;
     width: 100%;
     margin-top: 20px;
+
     }
-}
+	body{
+background-image: url("/image/mob.jpg");
+		}
+
+
+	}

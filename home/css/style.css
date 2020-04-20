@@ -88,10 +88,6 @@ label #cancel{
 	}
 }
 @media (max-width: 860px){
-	nav img{
-
-left: 50%;
-}
   label #btn{
     display: block;
   }
