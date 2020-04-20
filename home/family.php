@@ -17,27 +17,21 @@ session_start();
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <img src="gg.png" alt="covid19 risk checker">
+  <nav>
+        <a href="/"><img src="gg.png" alt="covid19 risk checker"></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">how to use</a></li>
+          <li><a href="https://gadgetguys.in">Home</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-tracker/">Global</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-status-in-india/">India</a></li>
+          <li><a href="https://gadgetguys.in/FAQ">FAQ</a></li>
+          <li><a href="https://gadgetguys.in/use">How to use</a></li>
         </ul>
-      </nav>
+      </nav> 
 	  
-	  <div class="page-content">
 		
 		 <form action="/self.php" method="POST">				
 			 	<div class="checkbox">
-			 	 <p> 1.	Is there any person from your family visited any of the following countries china, Italy ,France ,Spain etc. recently?</p>
+			 	 <p> 1.	Is there any person from your family traveled internationally recently?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q1" value="Yes" checked>
 				 <span class="yes">Yes</span>
@@ -48,8 +42,8 @@ session_start();
 		    	</label>
 		    	</div>
 			   
-			   <div class="checkbox1">
-			 	 <p>2.	Let us know if any of your family members had used public transport like train bus recently?</p>
+			   <div class="checkbox">
+			 	 <p>2.	If any of your family members had used public transport recently?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q2" value="Yes" checked>
 				 <span class="yes">Yes</span>
@@ -60,8 +54,8 @@ session_start();
 		    	</label>
 		    	</div>
 			 
-			  <div class="checkbox2">
-			 	 <p> 3.	Let us know if you or someone from your family come in close contact with a confirmed covid 19 recently?</p>
+			  <div class="checkbox">
+			 	 <p> 3.	If you or someone from your family come in close contact with <br>a confirmed covid 19 recently?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q3" value="Yes" checked>
 				 <span class="yes">Yes</span>
@@ -72,8 +66,8 @@ session_start();
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox3">
-			 	 <p>4.	Let us know if you came in close contact with someone one having cough cold fever and shortness of breath recently?</p>
+			 <div class="checkbox">
+			 	 <p>4.	If you came in close contact with someone one having <br>cough cold fever and shortness of breath recently?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q4" value="Yes" checked>
 				 <span class="yes">Yes</span>
@@ -84,8 +78,8 @@ session_start();
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox4">
-			 	 <p>5.	Tell us if anyone in your family is doctor , police or doing any other social jobs during lockdown days & have a close contact with you ?</p>
+			 <div class="checkbox">
+			 	 <p>5.	If anyone in your family is doctor , police or doing any other<br>social jobs during lockdown days & have a close contact with you ?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q5" value="Yes" checked>
 				 <span class="yes">Yes</span>
@@ -96,8 +90,8 @@ session_start();
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox5">
-			 	 <p>6.	Tell us if you or anyone from your family are using masks or gloves at the time of buying essential comodities like food and washing hand, face & legs properly after reaching home?</p>
+			 <div class="checkbox">
+			 	 <p>6.	If you or anyone from your family aren't using masks or gloves<br>at the time of buying essential comodities like food and washing<br>hand, face & legs properly after reaching home?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q6" value="Yes" checked>
 				 <span class="yes">Yes</span>
@@ -109,27 +103,27 @@ session_start();
 		    	</div>
 			 
 			 <div>
-			 <input type="Submit" value="Next" class="a1" >
+			 <input type="Submit" class="a1" >
 			 </div>
 			 
 			 </form>
 			 
 
-	  </div>
+	  
     
 	  
-    <footer>
+  <footer>
       <div class="footer-container">
         <div class="left-col">
           <img src="gg.png" alt="" class="logo">
           <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/askgadgetguys"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/askgadgetguys"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gadgetguys.in/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/gadgetguys/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/gadgetguys/"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <p class="rights-text">©dueldutta | All Rights Reserved.</p>
+          <p class="rights-text">© gadgetguys | All Rights Reserved.</p>
         </div>
 
         <div class="right-col">

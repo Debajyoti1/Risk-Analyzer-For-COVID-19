@@ -11,37 +11,30 @@ session_start();
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <img src="gg.png" alt="covid19 risk checker">
+  <nav>
+        <a href="/"><img src="gg.png" alt="covid19 risk checker"></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">how to use</a></li>
+          <li><a href="https://gadgetguys.in">Home</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-tracker/">Global</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-status-in-india/">India</a></li>
+          <li><a href="https://gadgetguys.in/FAQ">FAQ</a></li>
+          <li><a href="https://gadgetguys.in/use">How to use</a></li>
         </ul>
-      </nav>
+      </nav>      </nav>
 	  
 	  <!...........................................................................................................!>
-	<div class="heading_1">  
-<h1>Enter your Personal Info</h1>
-	  </div>
+	 
+<h2>Enter your Personal Info</h2>
 	  
-	  
-<div>
-<form class="box"action="/family.php" method="POST">
+
+<form class="box" action="/family.php" method="POST">
     <input type="text" name="Name" placeholder="Enter your Name" required><br>
     <input type="text" name="Age" placeholder="Enter your Age" required><br>
     <input type="text" name="Phone" placeholder="Phone(optional)" ><br>
 <!...........................................................................!>	
-<div class="info_1"	>
-	<h3>Tick on your gender catagory</h3>
-	</div>
+
+	<h2>Tick on your gender</h2>
+	
 	
 	
 <!...........................................................................!>
@@ -81,9 +74,9 @@ radios.forEach((radio, index) => {
 <!...........................................................................!>
 	
 
-    <input type="submit" value="Next">
+    <input type="submit">
     </form>
-    </div>
+    
 <!.............................................................................................................!>
 	  
     <footer>
@@ -91,13 +84,13 @@ radios.forEach((radio, index) => {
         <div class="left-col">
           <img src="gg.png" alt="" class="logo">
           <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/askgadgetguys"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/askgadgetguys"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gadgetguys.in/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/gadgetguys/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/gadgetguys/"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <p class="rights-text">©dueldutta | All Rights Reserved.</p>
+          <p class="rights-text">© gadgetguys | All Rights Reserved.</p>
         </div>
 
         <div class="right-col">

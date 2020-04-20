@@ -252,6 +252,7 @@ label #cancel{
 
 .a1
 {
+  margin-left: 45%;
 	position:relative;
 	align-content: center;
 	text-align: center;
@@ -416,4 +417,9 @@ footer{
     width: 100%;
     margin-top: 20px;
     }
+}
+@media screen and (max-width: 500px){
+  .a1{
+    margin-left: 30%;
+  }
 }

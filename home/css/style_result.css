@@ -5,13 +5,10 @@
   list-style: none;
   text-decoration: none;
 }
-a{
-  color: white;
-}
 body{
    margin: 0;
   padding: 0;
-	background-image: url("https://debajyoti.tk/image/doc1.jpg");
+	background: url("../image/doc1.jpg");
 	background-size: cover;
 	background-position: center;
   font-family: 'Open Sans', sans-serif;
@@ -102,6 +99,7 @@ label #cancel{
     left: -100%;
     text-align: center;
     transition: all .5s;
+	  
   }
   nav ul li{
     display: block;
@@ -127,7 +125,7 @@ label #cancel{
 
 .container
 {
-	max-width: 1000px;
+	
 	margin: 100px auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -277,21 +275,83 @@ label #cancel{
 	left: 100%;
 }
 
-/*................PAGE CONTENT............................*/
+/*.............................................*/
 
-.page-content{
-  min-height: 100vh;
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.testimonials
+{
+	margin: 200px auto 100px;
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+	grid-gap: 20px;
+}
+.testimonials .card1
+{
+	position: relative;
+	width: 350px;
+	margin: 0 auto;
+	background: #333;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	box-shadow: 0 10px 40px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+.testimonials .card1 .layer
+{
+	position: absolute;
+	top: calc(100% - 2px);
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#03a9f4, #e91ee3);
+	z-index: 1;
+	transition: 0.5s;
+}
+.testimonials .card1:hover .layer
+{
+	top: 0;
+}
+.testimonials .card1 .content
+{
+	position: relative;
+	z-index: 2;
+}
+.testimonials .card1 .content p
+{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.testimonials .card1 .content .image
+{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.testimonials .card1 .content .details h2
+{
+	font-size: 18px;
+	color: #fff;
+}
+.testimonials .card1 .content .details h2 span
+{
+	color: #03a9f4;
+	font-size: 14px;
+	transition: 0.5s;
+}
+.testimonials .card1:hover .content .details h2 span
+{
+	color: #fff;
 }
 
-
-/* .................FOOTER.....................*/
+/* footer......................................*/
 
 footer{
-  
   background: #f1f1f1;
   padding: 50px 0;
 }
@@ -335,13 +395,6 @@ footer{
   height: 4px;
   top: 15px;
   background: #fc5c65;
-}
-@media (max-width: 960px){
-	
-.border{
-  width: 100%;
-}
-	
 }
 
 .covid19-form{
@@ -396,6 +449,9 @@ footer{
     width: 100%;
     text-align: center;
   }
+	.border{
+		width: 98%;
+	}
 }
 
 
@@ -405,12 +461,4 @@ footer{
     width: 100%;
     margin-top: 20px;
     }
-@media screen and (max-width:600px) {
-  body{
-       margin: 0;
-  padding: 0;
-	background-image: url("https://debajyoti.tk/image/mob.jpg");
-	background-position: center;
-  font-family: 'Open Sans', sans-serif;
-  }
 }

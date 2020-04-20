@@ -92,22 +92,16 @@ $marks *=5;
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <img src="gg.png" alt="covid19 risk checker">
+  <nav>
+        <a href="/"><img src="gg.png" alt="covid19 risk checker"></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">how to use</a></li>
+          <li><a href="https://gadgetguys.in">Home</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-tracker/">Global</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-status-in-india/">India</a></li>
+          <li><a href="https://gadgetguys.in/FAQ">FAQ</a></li>
+          <li><a href="https://gadgetguys.in/use">How to use</a></li>
         </ul>
-      </nav>
-	 
+      </nav>	 
 <!.......................................................................................................................!>
 	  
 <div class="page-content">
@@ -156,14 +150,53 @@ $marks *=5;
       }
 
 	  ?>
-	  </div>
-      <div class="a1">
-	  <a href="index.php">Retest</a>
-	  </div>
-    <div class="a2">
-	  <a href="https://api.whatsapp.com/send?phone=&text=Get%20Check%20your%20risk%20for%20COVID19and%20disperse%20this%20virous%20from%20this%20website%3a%20https%3a%2f%2fdebajyoti.tk%20%F0%9F%A6%A0%0a%0aStay%20Indoors%20%26%20Stay%20Safe%20%F0%9F%87%AE%F0%9F%87%B3%20&source=&data=&app_absent=">Share</a>
-	  </div>
+	  <!..................................................paste here your div............................................!>
+	  
+	  <!..................................................................................................................!>	
+	  
+<!.......................................................................................................................!>
+	  
+	  <div class="testimonials">
+	<div class="card1">
+		<div class="layer"></div>
+		<div class="content">
+			<p>Our health care soldiers & security department are trying to save us from COVID19 for 24x7, support and encourage them just by staying in home & obeying lockdown.</p>
+			<div class="image">
+				<img src="image/sd .png">
+			</div>
+			<div class="details">
+				<h2>Snehesh Dutta<br><span>ECE 3rd Year BPPIMT</span></h2>
+			</div>
+		</div>
+	</div>
 
+	<div class="card1">
+		<div class="layer"></div>
+		<div class="content">
+			<p>To remove the mask: remove it from behind (do not touch the front of mask);discard immediately in a closed bin;clean hands with alcohol-based hand rub and water.</p>
+			<div class="image">
+				<img src="image/WHO.png">
+			</div>
+			<div class="details">
+				<h2>WHO<br><span>World Health Organization</span></h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="card1">
+		<div class="layer"></div>
+		<div class="content">
+			<p>It’s just a matter of time we humans come with solutions and for that time we are trying to prevent the disease from spreading as much as possible.</p>
+			<div class="image">
+				<img src="image/debu .png">
+			</div>
+			<div class="details">
+				<h2>Debajyoti Dutta<br><span>CSE 3rd Year BPPIMT</span></h2>
+			</div>
+		</div>
+	</div>
+</div>
+	  
 <!.......................................................................................................................!>
 	  
     <footer>
@@ -171,13 +204,13 @@ $marks *=5;
         <div class="left-col">
           <img src="gg.png" alt="" class="logo">
           <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/askgadgetguys"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/askgadgetguys"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gadgetguys.in/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/gadgetguys/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/gadgetguys/"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <p class="rights-text">©dueldutta | All Rights Reserved.</p>
+          <p class="rights-text">© gadgetguys | All Rights Reserved.</p>
         </div>
 
         <div class="right-col">
@@ -198,25 +231,3 @@ $marks *=5;
 	  
   </body>
 </html>
-
-
-<?php
-$servername = "localhost";
-$username = "covid";
-$password = "Gadgetguys@2000";
-$dbname = "covid";
-$sql = "INSERT INTO details (`name`, `age`, `phone`, `gender`, `ip`, `os`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`, `q11`, `q12`, `q13`, `marks`) values('$name','$age','$phone','$gender','$ip','$os','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13',$marks);";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-$conn->query($sql);
-$conn->close();
-?>
-
-
-
-<?php
-session_unset();
-
-session_destroy();
-?>

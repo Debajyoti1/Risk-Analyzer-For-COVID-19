@@ -19,23 +19,17 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <img src="gg.png" alt="covid19 risk checker">
+  <nav>
+        <a href="/"><img src="gg.png" alt="covid19 risk checker"></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">how to use</a></li>
+          <li><a href="https://gadgetguys.in">Home</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-tracker/">Global</a></li>
+          <li><a href="https://gadgetguys.in/covid19-live-status-in-india/">India</a></li>
+          <li><a href="https://gadgetguys.in/FAQ">FAQ</a></li>
+          <li><a href="https://gadgetguys.in/use">How to use</a></li>
         </ul>
-      </nav>
+      </nav>	  
 	  
-	  <div class="page-content">
 		
 		 <form action="/result.php" method="POST">				
 			 	<div class="checkbox">
@@ -50,7 +44,7 @@
 		    	</label>
 		    	</div>
 			   
-			   <div class="checkbox1">
+			   <div class="checkbox">
 			 	 <p>2.	Tell us honestly if you have fever?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q8" value="Yes" checked>
@@ -62,7 +56,7 @@
 		    	</label>
 		    	</div>
 			 
-			  <div class="checkbox2">
+			  <div class="checkbox">
 			 	 <p>3.	Tell us honestly if you have headache?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q9" value="Yes" checked>
@@ -74,7 +68,7 @@
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox3">
+			 <div class="checkbox">
 			 	 <p>4.	Tell us honestly if you have cough and cold?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q10" value="Yes" checked>
@@ -86,7 +80,7 @@
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox4">
+			 <div class="checkbox">
 			 	 <p>5.	Tell us honestly if you have coarseness in voice?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q11" value="Yes" checked>
@@ -98,7 +92,7 @@
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox5">
+			 <div class="checkbox">
 			 	 <p>6.	Tell us honestly if you have sore throat?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q12" value="Yes" checked>
@@ -110,7 +104,7 @@
 		    	</label>
 		    	</div>
 			 
-			 <div class="checkbox6">
+			 <div class="checkbox">
 			 	 <p>7.	Tell us honestly if you have shortness of breath?</p>
 		    	<label>
 			     <input type="radio" id="yes" name="q13" value="Yes" checked>
@@ -122,28 +116,27 @@
 		    	</label>
 		    	</div>
 			 
-			 <div>
-			 <input type="Submit" value="Next" class="a1" >
-			 </div>
+
+			 <input type="Submit" class="a1" >
 			 
 			 </form>
 			 
 
-	  </div>
+	  
     
 	  
-    <footer>
+  <footer>
       <div class="footer-container">
         <div class="left-col">
           <img src="gg.png" alt="" class="logo">
           <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/askgadgetguys"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/askgadgetguys"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gadgetguys.in/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/gadgetguys/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/gadgetguys/"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <p class="rights-text">©dueldutta | All Rights Reserved.</p>
+          <p class="rights-text">© gadgetguys | All Rights Reserved.</p>
         </div>
 
         <div class="right-col">
