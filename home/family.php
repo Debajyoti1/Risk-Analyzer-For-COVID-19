@@ -11,7 +11,7 @@ session_start();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Risk Analyzer</title>
+    <title>Risk Analyzer For Covid-19-family | covid.gadgetguys.in</title>
     <link rel="stylesheet" href="css/style_family.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

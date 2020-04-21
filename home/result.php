@@ -86,7 +86,7 @@ $marks *=5;
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Risk Analyzer</title>
+    <title>Risk Analyzer For Covid-19-result | covid.gadgetguys.in</title>
     <link rel="stylesheet" href="css/style_result.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -150,6 +150,13 @@ $marks *=5;
       }
 
 	  ?>
+  </div>
+  <div class="a1">
+	  <a href="index.php"><span style="color: white;">Retest</span></a>
+	  </div>
+    <div class="a2">
+    <a href="https://api.whatsapp.com/send?phone=&text=My%20Risk%20Score%20for%20COVID-19%20is%20<?php echo $marks; ?>%25.%0A%0ACheck%20out%20Your%20Risk%20Score%20from%20%3A%20%0Ahttps%3A%2F%2Fcovid.gadgetguys.in%0A%0AStay%20Indoors%20%26%20Stay%20Safe%20%F0%9F%87%AE%F0%9F%87%B3%20%0A%23WeShallOverCome&source=&data=&app_absent=">Share</a>
+	</div>
 	  <!..................................................paste here your div............................................!>
 	  
 	  <!..................................................................................................................!>	
@@ -231,3 +238,23 @@ $marks *=5;
 	  
   </body>
 </html>
+<?php
+$servername = "localhost";
+$username = "covid";
+$password = "Gadgetguys@2000";
+$dbname = "covid";
+$sql = "INSERT INTO details (`name`, `age`, `phone`, `gender`, `ip`, `os`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`, `q11`, `q12`, `q13`, `marks`) values('$name','$age','$phone','$gender','$ip','$os','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13',$marks);";
+
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+$conn->query($sql);
+$conn->close();
+?>
+
+
+
+<?php
+session_unset();
+
+session_destroy();
+?>

@@ -11,7 +11,12 @@ $b=end($results['cases_time_series']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Risk Analyzer</title>
+    <title>Risk Analyzer For Covid-19 | covid.gadgetguys.in</title>
+	<meta name="description" content="Check Your Risk Score for COVID-19 From GADGETGUYS by giving some simple answer to our predetermined questions">
+	<meta property="og:title" content="Risk Analyzer For Covid-19 | covid.gadgetguys.in" />
+	<meta property="og:description" content="Check Your Risk Score for COVID-19 From GADGETGUYS by giving some simple answer to our predetermined questions" />
+	<meta property="og:url" content="https://covid.gadgetguys.in" />
+	<meta property="og:image" content="https://covid.gadgetguys.in/fimg.jpg" />
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
